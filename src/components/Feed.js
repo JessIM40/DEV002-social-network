@@ -78,7 +78,7 @@ export const showPost = () => {
         if (userLoginFirebase === userPost) {
           const articlePost = `
             <article class='postUsers'>
-              <div name='feed' id=${docu.id}>
+              <div class='post' name='feed' id=${docu.id}>
                 <label id='nameUserPost' for='name' class='name_user'>${docu.data().nameUser}</label>
                 <button type='button' id=${'ed'}${docu.id} class='btn_edit'>
                   <img class='imgEdit' src='./IMG/boligrafo.png' alt='Lápiz de edición'>
@@ -87,7 +87,7 @@ export const showPost = () => {
                 <div class='likear' id=${docu.id}>
                   <img class='imgLikeRosa' src='./IMG/corazonRosa.png' alt='Corazón pintado de rosa'>
                   <img class ='imgLikeVacio' src='./IMG/corazon.png' alt='Corazón sin pintar'></img>
-                  <span id=${'c'}${docu.id}>0</span>
+                  <span class='contador' id=${'c'}${docu.id}>0</span>
                 </div>
                 <div class='container_remove'>
                   <!--<p class='textRemove'>Eliminar Publicación</p>-->
@@ -96,7 +96,6 @@ export const showPost = () => {
                   </button>
                 </div>
               </div>
-              <hr>
             </article>
           `;
           sectionPosts.innerHTML += articlePost;
@@ -109,10 +108,9 @@ export const showPost = () => {
               <div class='likear' id=${docu.id}>
                 <img class='imgLikeRosa' src='./IMG/corazonRosa.png' alt='Corazón pintado de rosa'>
                 <img class ='imgLikeVacio' src='./IMG/corazon.png' alt='Corazón sin pintar'></img>
-                <span id=${'c'}${docu.id}>0</span>
+                <span class='contador'id=${'c'}${docu.id}>0</span>
               </div>
             </div>
-            <hr>
           </article>
         `;
           sectionPosts.innerHTML += articlePost;
